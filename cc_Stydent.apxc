@@ -1,0 +1,14 @@
+public class Student {
+    public static void createStudent(String name, Double StuId, Integer age, Date birth, String course) {
+        Student__c Stud = new Student__c(
+            Name__c = name,
+            StudentId__c = StuId,
+            Age__c = age,
+            BirthDate__c = birth,
+            Course__c = course
+        );
+        insert Stud;
+    }
+}
+
+//Student.createStudent('Manav', 909, 24, Date.newInstance(2004, 2, 3), 'Computer Science');
