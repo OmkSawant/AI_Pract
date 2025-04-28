@@ -1,0 +1,30 @@
+public class SimpleCalculator {
+
+    public static Integer add(Integer num1, Integer num2) {
+        return num1 + num2;
+    }
+
+    public static Integer subtract(Integer num1, Integer num2) {
+        return num1 - num2;
+    }
+
+    public static Integer multiply(Integer num1, Integer num2) {
+        return num1 * num2;
+    }
+
+    public static Decimal divide(Integer num1, Integer num2) {
+        if (num2 != 0) {
+            return Decimal.valueOf(num1) / Decimal.valueOf(num2);
+        } else {
+            System.debug('Error: Division by zero.');
+            return null;
+        }
+    }
+}
+
+
+
+//System.debug('Addition: ' + SimpleCalculator.add(10, 5));
+//System.debug('Subtraction: ' + SimpleCalculator.subtract(10, 5));
+//System.debug('Multiplication: ' + SimpleCalculator.multiply(10, 5));
+//System.debug('Division: ' + SimpleCalculator.divide(10, 5));
