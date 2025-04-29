@@ -1,0 +1,13 @@
+public class Employee {
+    
+    public static void createEmployee(String name, Integer empId) {
+        Employee__c emp = new Employee__c(
+            Name=name,
+            Name__c = name,
+            Emp_id__c = empId
+        );
+        insert emp;
+    }
+}
+
+//Employee.createEmployee('saniya',10);
